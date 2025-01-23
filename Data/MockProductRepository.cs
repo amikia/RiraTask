@@ -9,7 +9,7 @@ namespace Data
 {
     public class MockProductRepository
     {
-        List<Product> products = new List<Product>
+        public List<Product> Products = new List<Product>
         {
             new Product{ Id = 1, Name = "Product A", Category = Categories.Category1, Price = 100 },
             new Product{ Id = 2, Name = "Product B", Category = Categories.Category1, Price = 150 },
