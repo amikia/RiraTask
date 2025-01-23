@@ -11,10 +11,9 @@ namespace Services
     public class ProductService : IProductService
     {
         private readonly MockProductRepository _mockProductRepository;
-
-        public ProductService(MockProductRepository mockProductRepository)
+        public ProductService()
         {
-            _mockProductRepository = mockProductRepository;
+            _mockProductRepository = new MockProductRepository();
         }
 
         public List<Product> GetProductsFromCategoryOne()
