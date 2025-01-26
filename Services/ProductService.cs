@@ -16,6 +16,8 @@ namespace Services
             _mockProductRepository = new MockProductRepository();
         }
 
+        #region sync methods
+
         public List<Product> GetProductsFromCategoryOne()
         {
             var result = _mockProductRepository.Products.Where(p => p.Category == Categories.Category1).ToList();
@@ -42,5 +44,7 @@ namespace Services
         {
             return _mockProductRepository.Products.Sum(p => p.Price);
         }
+
+        #endregion
     }
 }

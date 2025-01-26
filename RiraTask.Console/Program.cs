@@ -2,6 +2,8 @@
 using Microsoft.Extensions.Hosting;
 using Services;
 
+// Needed to use hosting and dependency injection packages for using the product service interface
+
 HostApplicationBuilder builder = Host.CreateApplicationBuilder(args);
 
 builder.Services.AddScoped<IProductService, ProductService>();
@@ -21,6 +23,11 @@ while (true)
     var input = Convert.ToInt32(Console.ReadLine());
 
     IProductService productService = new ProductService();
+
+    if (input > 5 || input < 1)
+    {
+        throw new Exception("Input wasn't in the above list");
+    }
 
     if (input == 1)
     {

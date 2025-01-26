@@ -1,0 +1,6 @@
+@RiraTask.WebApi_HostAddress = http://localhost:5134
+
+GET {{RiraTask.WebApi_HostAddress}}/product/
+Accept: application/json
+
+###

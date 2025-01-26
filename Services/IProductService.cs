@@ -9,10 +9,16 @@ namespace Services
 {
     public interface IProductService
     {
+        #region sync methods
+        
         List<Product> GetProductsFromCategoryOne();
         Product GetProductWithHighestValue();
         int ProductsValuesSum();
         List<Product> OrderProductsByCategory();
         double ProductsAverageValue();
+
+        #endregion
+
+        // As there is no database and EF Core there is no use in writing async methods
     }
 }
