@@ -10,6 +10,7 @@ builder.Services.AddScoped<IProductService, ProductService>();
 using IHost host = builder.Build();
 host.Start();
 
+// A console app that acts like a presentation layer for the project
 
 Console.WriteLine("Choose the action and enter the number: \n\n");
 Console.WriteLine("\t -- 1 Select all products from Category1 \n\n" +
@@ -26,7 +27,7 @@ while (true)
 
     if (input > 5 || input < 1)
     {
-        throw new Exception("Input wasn't in the above list");
+        throw new Exception("Input wasn't in the list above");
     }
 
     if (input == 1)

@@ -14,7 +14,7 @@ namespace RiraTask.WebApi.Controllers
             _productService = productService;
         }
 
-        [HttpGet("FromCategoryOne")]
+        [HttpGet("ProductsFromCategoryOne")]
         public ActionResult<List<Product>> GetProductsFromCategoryOne()
         {
             var result = _productService.GetProductsFromCategoryOne();
@@ -41,7 +41,7 @@ namespace RiraTask.WebApi.Controllers
         }
 
 
-        [HttpGet("GetProductWithHighestValue")]
+        [HttpGet("ProductWithHighestValue")]
         public ActionResult<Product> GetProductWithHighestValue()
         {
             var result = _productService.GetProductWithHighestValue();
