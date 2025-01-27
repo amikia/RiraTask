@@ -1,7 +1,5 @@
 
-Important!: As there wasn't a specific method mentioned to show the result of queries, I wrote a console app, a web api and a simple web app 
-
-
+Important!: As there wasn't a specific method mentioned to show the result of queries, I wrote a console app, a web api and a simple web app.
 
 
 
