@@ -1,0 +1,12 @@
+﻿@model double;
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<div class="p-5">
+    <ul class="list-unstyled">
+        <li class="p-2 h6 display-6 fw-bold">Average price of products:</li>
+        <li class="p-2 fs-2">@Model.ToString()</li>
+    </ul>
+</div>

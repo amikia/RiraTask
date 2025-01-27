@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="p-5">
+    <h6 class="display-5 mb-5">Query methods to use</h6>
+
+    <table class="table">
+        <tr>
+            <td>
+                Get products from category 1
+                <a class="btn text-decoration-none" asp-controller="Product" asp-action="ProductsOfCategoryOne">Run</a>
+            </td>
+        </tr>
+            
+        <tr>
+            <td> 
+                Sort products by categories
+                <a class="btn text-decoration-none" asp-controller="Product" asp-action="SortByCategory">Run</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Get product with the highest value
+                <a class="btn text-decoration-none" asp-controller="Product" asp-action="HighestValue">Run</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Sum of products prices
+                <a class="btn text-decoration-none" asp-controller="Product" asp-action="SumOfPrices">Run</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Average products price
+                <a class="btn text-decoration-none" asp-controller="Product" asp-action="AveragePrice">Run</a>
+            </td>
+        </tr>
+    </table>
+</div>
